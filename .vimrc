@@ -1,6 +1,9 @@
 """"""""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""""
+" Load bash_aliases
+"set shell=/bin/bash\ -i
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -80,11 +83,13 @@ call vundle#begin()                         " TYPE
 	Plugin 'easymotion/vim-easymotion'        " Search
 	Plugin 'editorconfig/editorconfig-vim'    " Other
 	Plugin 'Raimondi/delimitMate'             " autoclose () {} ...
-	Plugin 'docunext/closetag.vim'            " HTML auto close tags
   Plugin 'mattn/emmet-vim'                  " HTML
   Plugin 'tpope/vim-fugitive'               " Git
 	Plugin 'kien/ctrlp.vim'                   " File search
   Plugin 'ervandew/supertab'                " autocomplete
+	Plugin 'wavded/vim-stylus'
+	Plugin 'jpalardy/vim-slime'               " Clojure
+	Plugin 'guns/vim-clojure-highlight'       " Clojure
 call vundle#end()
 
 """"""""""""""""""""""""""""""""""""""""""
@@ -93,10 +98,12 @@ call vundle#end()
 syntax enable
 
 " ===> Monokai
+set background=dark
 colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
 set t_Co=256
+set term=screen-256color
 
 " ===> Solarized
 "colorscheme solarized
@@ -109,13 +116,21 @@ set t_Co=256
 """""""""""""""""""""""""""""""""""""""""""
 " Ctrl+p ignore
 """"""""""""""""""""""""""""""""""""""""""
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
-	\ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|bower_components|tmp|)$',
-	\ 'file': '\v\.(exe|so|dll)$',
-	\ 'link': 'some_bad_symbolic_links',
+	\ 'dir':  'node_modules',
 \ }
+
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Tmux
+""""""""""""""""""""""""""""""""""""""""""
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 """""""""""""""""""""""""""""""""""""""""""
 " easymotion
@@ -126,3 +141,8 @@ let g:EasyMotion_smartcase = 1
 nmap s <Plug>(easymotion-s)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+
+"""""""""""""""""""""""""""""""""""""""""""
+" emmet
+"""""""""""""""""""""""""""""""""""""""""""
+let g:user_emmet_leader_key='<C-Z>'
