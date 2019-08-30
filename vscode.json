@@ -1,0 +1,99 @@
+{
+  "breadcrumbs.enabled": false,
+  "city-lights-icons-vsc.hidesExplorerArrows": true,
+  "debug.toolBarLocation": "hidden",
+  "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.foldingStrategy": "indentation",
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.side": "right",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderIndentGuides": false,
+  "editor.renderWhitespace": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.selectionHighlight": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "emmet.includeLanguages": {
+    "liquid": "html",
+    "mustache": "html"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.exclude": {
+    ".next": true,
+    "__generated__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/node_modules/*/**": true,
+    "**/public": true,
+    "assets": true,
+    "flow-typed": true,
+    "tmp": true
+  },
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": true,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.recentChanges.highlight.locations": ["overview"],
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "highlight-matching-tag.styles": {
+    "closing": {
+      "name": {
+        "underline": "#d95468"
+      }
+    },
+    "opening": {
+      "name": {
+        "underline": "#d95468"
+      }
+    }
+  },
+  "html.format.indentInnerHtml": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "search.location": "panel",
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "window.menuBarVisibility": "toggle",
+  "window.restoreFullscreen": true,
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "City Lights",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showIcons": false,
+  "workbench.iconTheme": "city-lights-icons-vsc-light",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.statusBar.visible": false,
+  "workbench.view.alwaysShowHeaderActions": false,
+  "zenMode.hideTabs": false,
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
